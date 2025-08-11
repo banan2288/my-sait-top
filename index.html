@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вся правда здесь</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.kinomania.ru/sites/default/files/styles/article/public/film_frames/cbcd58ee9de5728b2a00dfb47ea84099_1629378-2087115.jpeg?itok=NE7pKjFp.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white; /* Белый текст для лучшей читаемости */
+        }
+
+        /* Удален весь серый фон (header-container) */
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px; /* Увеличил отступы */
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff0000;
+            margin: 0 0 25px 0;
+            font-size: 42px; /* Увеличил размер */
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            letter-spacing: 2px;
+        }
+
+        .photos-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame {
+            width: 180px;
+            height: 180px;
+            border: 3px dashed rgba(255, 0, 0, 0.7);
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .links-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .source-link {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            background: rgba(255, 0, 0, 0.6);
+            border-radius: 30px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .source-link:hover {
+            background: rgba(255, 0, 0, 0.8);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .website-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>ВСЯ ПРАВДА ЗДЕСЬ</h1>
+        
+        <div class="photos-container">
+            <div class="photo-frame">
+                <img src="https://static01.nyt.com/images/2016/11/14/arts/00xp-chan1/00xp-chan1-videoSixteenByNineJumbo1600.jpg" alt="Фото 1">
+            </div>
+            
+            <div class="photo-frame">
+                <img src="https://i.pinimg.com/474x/1d/1c/42/1d1c42bbf7197e4d65dadb347420245d.jpg?nii=t" alt="Фото 2">
+            </div>
+            
+            <div class="photo-frame">
+                <img src="https://i.pinimg.com/originals/dc/0d/3b/dc0d3b753a98fef98310517b6d0a2921.jpg" alt="Фото 3">
+            </div>
+        </div>
+        
+        <div class="links-row">
+            <a href="https://scholar.google.com/" class="source-link" target="_blank">1 источник</a>
+            <a href="https://cyberleninka.ru/" class="source-link" target="_blank">2 источник</a>
+            <a href="https://www.bolshoyvopros.ru/" class="source-link" target="_blank">3 источник</a>
+            <a href="https://www.britannica.com/" class="source-link" target="_blank">4 источник</a>
+            <a href="https://ru.wikipedia.org/wiki/Заглавная_страница" class="source-link" target="_blank">5 источник</a>
+            <a href="https://chat.deepseek.com/" class="source-link" target="_blank">6 источник</a>
+    </div>
+</body>
+</html>
